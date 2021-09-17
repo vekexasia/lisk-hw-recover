@@ -78,7 +78,7 @@ async function doRecover() {
             fee: BigInt(243000),
             senderPublicKey: publicKey, // If not provided, it will be set automatically
             asset: {
-              amount: BigInt(100000000),
+              amount: addrData.balance,
               recipientAddress: cryptography.getAddressFromLisk32Address(recipient), // self-transfer
               data: 'Recovered with lisk-hw-recover by vekexasia and corsaro',
             }
