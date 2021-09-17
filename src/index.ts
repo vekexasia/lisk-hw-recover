@@ -9,13 +9,13 @@ import {TransferAssetSchema} from "./sendSchema";
 const RPC_ENDPOINT = 'wss://lisk-mainnet-api.liskworld.info/ws';
 
 async function doRecover() {
-  const {disclaymer} = await inquirer.prompt([{
-    name: 'disclaymer',
+  const {disclaimer} = await inquirer.prompt([{
+    name: 'disclaimer',
     default: false,
     type: 'confirm',
     message: 'Did you read the README file and accept/understand everything that is written into it?'
   }]);
-  if (!disclaymer) {
+  if (!disclaimer) {
     return false;
   }
   const {seed} = await inquirer.prompt([{

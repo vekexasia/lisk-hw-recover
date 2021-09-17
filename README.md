@@ -2,7 +2,7 @@
 
 This tool will let you recover your lisk funds from a ledger or trezor hardware wallet which is known to be not supported at the time I am writing this.
 
-## Disclaymer
+## Disclaimer
 
 This tool has no guarantee to function properly although it has been tested by a few. If you use this you'll have to do it at your own risk.
 
