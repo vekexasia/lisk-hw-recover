@@ -85,7 +85,7 @@ async function doRecover() {
           };
           // Populate amounts.
           unsignedTransaction.fee = transactions.computeMinFee(TransferAssetSchema.schema, unsignedTransaction);
-          unsignedTransaction.asset.amount = addrData.balance - unsignedTransaction.fee;
+          unsignedTransaction.asset.amount = addrData.balance - unsignedTransaction.fee - 5000000n;
 
           const signedTx = signTransaction(hexSeed.toString('hex'), path, unsignedTransaction);
           // const txBroadcastBytes = transactions.getBytes(TransferAssetSchema.schema, signedTx);
